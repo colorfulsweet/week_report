@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  
+  <servlet>
+    <servlet-name>DateServiceInit</servlet-name>
+    <servlet-class>com.servlet.DateServiceInit</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateServiceInit</servlet-name>
+    <url-pattern>/DateServiceInit</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Session的有效时间 -->
+   <session-config>
+     <session-timeout>60</session-timeout>
+   </session-config>
+
+  <!-- 站点首页面 -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+   <servlet-name>spring_mvc</servlet-name>
+   <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+   <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>spring_mvc</servlet-name>
+   <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 使用过滤器控制请求的编码类型 -->
+  <filter>
+  <filter-name>CharacterEncodingFilter</filter-name>
+  <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+   <init-param>
+    <param-name>encoding</param-name>
+    <param-value>utf-8</param-value>
+   </init-param>
+  </filter>
+  <filter-mapping>
+   <filter-name>CharacterEncodingFilter</filter-name>
+   <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 配置错误页面 -->
+   <error-page>
+   	<error-code>500</error-code>
+   	<location>/WEB-INF/error_pages/500.jsp</location> 
+   </error-page> 
+   <error-page> 
+   	<error-code>404</error-code> 
+   	<location>/WEB-INF/error_pages/404.jsp</location> 
+   </error-page> 
+  
+  <!-- log4j配置 -->
+  <context-param>
+  	<param-name>log4jConfigLocation</param-name>
+  	<param-value>WEB-INF/classes/log4j.properties</param-value>
+  </context-param>
+  <listener> 
+	<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class> 
+  </listener>
+  
+</web-app>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<explorer>
+	<menu name="周报" icon="fa-file-excel-o">
+	<!-- 一级菜单 -->
+		<submenu>
+		<!-- 二级菜单 -->
+			<name>生成周报</name>
+			<url>page/product.do</url>
+		</submenu>
+		<submenu>
+			<name>定制周报</name>
+			<url>page/customMade.do</url>
+		</submenu>
+	</menu>
+	<menu name="账户管理" icon="fa-wrench">
+		<submenu>
+			<name>修改密码</name>
+			<url>page/changePwd.do</url>
+		</submenu>
+		<submenu>
+			<name>邮箱管理</name>
+			<url>page/mailboxConfig.do</url>
+		</submenu>
+	</menu>
+</explorer>

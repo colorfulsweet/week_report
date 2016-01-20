@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/WEB-INF/spring_mvc-servlet.xml,WebRoot/My97DatePicker/WdatePicker.js,WebRoot/js/menu.js,WebRoot/jquery/jquery-1.8.3.min.js,WebRoot/WEB-INF/views/login.jsp,WebRoot/js/register.js
+validator.Revalidate=true
+validator.Unchecked=

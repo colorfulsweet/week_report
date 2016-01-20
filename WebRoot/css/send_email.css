@@ -1,0 +1,6 @@
+@charset "utf-8";
+*{font-family:"微软雅黑";margin:0px;padding:0px;}
+.EmailInfo{padding:5px 15px;cursor:pointer;}
+.EmailInfo:hover{/*光标指向时的样式*/background:#F2F2B3;}
+.EmailInfo:active {background:#E8E873;}
+.EmailInfo .info_text{color:blue;margin:0px 5px;}

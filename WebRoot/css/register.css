@@ -1,0 +1,25 @@
+*{padding:0px;margin:0px;font-family:"微软雅黑";}
+body{height:100%;width:100%;}
+.main{
+/*width:583px;height:370px;*/
+	width:443px;
+	height:270px;
+	margin:10px auto;
+	padding-top:100px;
+	padding-left:140px;
+	background:url(../images/register/register-bg.png);
+	position:relative;
+	top:200px;
+	z-index:3;
+}
+.text{text-align:right;}
+.input{height:20px;width:160px;}
+.main,.input{font-size:17px;}
+#checkcode{width:50px;}
+.main .info{font-size:15px;font-weight:normal;}
+td{padding:5px;font-weight:bold;}
+a{font-weight:normal;color:#333;text-decoration:none;}
+a:hover{color:red;text-decoration:underline;}
+.button{width:70px;font-size:16px;font-family:"微软雅黑";font-weight:normal;margin:2px;}
+
+.clipBg {position:absolute;left:0;top:0;overflow: hidden;width:100%;height:100%;display:none;z-index:2;}

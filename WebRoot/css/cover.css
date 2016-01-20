@@ -1,0 +1,15 @@
+/*-----遮罩层样式-----*/
+#main{text-align:center;}
+#fullbg { background-color:gray; left:0; opacity:0.5; position:absolute; top:0; z-index:8; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; }
+#nextWeekTask,#selectPartner,#sendMail { background-color:#fff; border:5px solid rgba(0,0,0, 0.4); padding:1px; position:absolute; top:20%; z-index:9; border-radius:5px; display:none; }
+#nextWeekTask{height:300px; width:400px;}
+#selectPartner{height:400px; width:200px;}
+#sendMail{height:400px;width:600px;}
+#nextWeekTask p,#selectPartner p,#sendMail p{ margin:0 0 12px; height:24px; line-height:24px; background:#CCCCCC;text-align:right; padding-right:10px;padding-top:3px; }
+
+#selectPartner .partner_list{overflow-y:scroll;height:280px;border:1px solid gray;margin:2px 5px;}
+.partner_list ul {list-style-type:none;padding-left:5px;text-align:left;margin:0;}
+.partner_list ul li .delPartner{display:none;color:red;}
+iframe[name=sendMail]{border:none;}
+
+.tab td{padding:3px;}
